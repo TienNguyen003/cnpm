@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priazo - Profile</title>
+</head>
+<style>
+    .heading {
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .border {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .border-bt {
+        width: 80px;
+        height: 4px;
+        background-color: #000;
+    }
+
+    .content {
+        display: flex;
+        margin: 0 80px;
+    }
+
+    .nav {
+        width: 270px;
+        margin-right: 20px;
+    }
+
+    .list-unstyled {
+        padding-left: 0;
+        list-style: none;
+    }
+
+    .list-unstyled a {
+        display: block;
+        position: relative;
+        padding: 5px 0px;
+        text-decoration: none;
+        color: #000;
+    }
+
+    .list-unstyled a:hover {
+        color: #9d2d42;
+    }
+
+    .account-title {
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        position: relative;
+    }
+
+    #view_address {
+        opacity: 0.6;
+        text-decoration: none;
+        color: #000;    
+    }
+    .detail{
+        width: 100%;
+    }
+    .customer-order {
+        margin: 30px 0;
+        padding: 10px;
+        width: 100%;
+        background: #f7f7f7;
+    }
+
+    .detail-product {
+        background-color: #fff;
+        padding: 10px;
+    }
+</style>
+
+<body>
+    <h1 class="heading">Tài Khoản Của Bạn</h1>
+    <div class="border">
+        <p class="border-bt"></p>
+    </div>
+    <div class="content">
+        <div class="nav">
+            <h3 class="account-title">Tài Khoản</h3>
+            <ul class="list-unstyled">
+                <li class="current"><a href="/account">Thông tin tài khoản</a></li>
+                <li><a href="/account/addresses">Danh sách địa chỉ</a></li>
+                <li class="last"><a href="/account/logout">Đăng xuất</a></li>
+            </ul>
+        </div>
+        <div class="detail">
+            <div class="detail-user">
+                <h3 class="account-title">Thông tin tài khoản</h3>
+                <div>Tien</div>
+                <div>123@gmail.com</div>
+                <div>VietName</div>
+                <a href="/" id="view_address">Xem địa chỉ</a>
+            </div>
+            <div class="customer-order">
+                <div class="detail-product">
+                    Bạn chưa mua sản phẩm nào
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
