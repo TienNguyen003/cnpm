@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        a{
+            text-decoration:none;
+        }
+        .container{
+            display: flex;
+            text-align: center;
+            min-height: 560pt;
+        }
+        .container_box-img{
+            width: 100%;
+            height: 550pt;
+            /* display: block; */
+        }
+        .container a{
+            color: black;
+            display: inline-block;
+            border: 2pt solid black;
+            font-size: 23pt;
+            background-color: beige;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .container h3{
+            font-size: 56pt;
+            color: white;
+            margin-bottom: 26pt;
+        }
+        .container_box{
+            margin: 0 auto;
+        }
+        .container_box-info{
+            /* position: absolute;
+            left: 50%;
+            top: 50%; */
+            margin-top: -350pt;
+        }
+        .section-new-arrivals{
+            background-color: #E8E8E8;
+            height: 560pt;
+            width: 100%;
+        }
+        .container2{
+            height: 500pt;
+            width: 1020pt;
+            margin: 0 auto;
+            padding-top: 36pt;
+            padding-bottom: 10pt;
+        }
+        .heading{
+            text-align: center;
+        }
+        .heading h3{
+            border-bottom: 2pt solid rgb(235, 116, 42);
+            width: 160pt;
+            margin: 0 auto;
+            font-size: 16pt;
+        }
+        .slide{
+            width: 900pt;
+            margin: 0 auto;
+            overflow: hidden;
+            text-align: center;
+            position: relative;
+        }
+        .chuyen_slide{
+            display: flex;
+            transition: all 0.5s;
+        }
+        .chuyen_slide img{
+            height: 400pt;
+            width: 300pt;
+            float: left;
+        }
+        .chuyen_slide div{
+            width: 300pt;
+        }
+        .chuyen_slide p{
+            color: rgb(250, 129, 29);
+            font-size: 16pt;
+        }
+        .chuyen_slide h4{
+            color: rgb(250, 129, 29);
+            font-size: 16pt;
+        }
+        .slide .huongtrai{
+            position: absolute;
+            width: 50pt;
+            top: 50%;
+            left: 1pt;
+        }
+        .slide .huongphai{
+            position: absolute;
+            width: 50pt;
+            top: 50%;
+            right: 1pt;
+        }
+        .huongtrai, .huongphai{
+            display: none;
+        }
+        .slide:hover .huongphai{
+            display: block;
+        }
+        .slide:hover .huongtrai{
+            display: block;
+        }
+        .hotdeal{
+            padding-top: 46pt;
+            height: 460pt;
+            width: 100%;
+        }
+        .container3{
+            height: 400pt;
+            width: 1020pt;
+            margin: 0 auto;
+        }
+        .heading2{
+            text-align: center;
+            font-size: 16pt;
+            padding-bottom: 16pt;
+        }
+        .heading2 h3{
+            border-bottom: 2pt solid rgb(235, 116, 42);
+            width: 160pt;
+            margin: 0 auto;
+            margin-bottom: 12pt;
+        }
+        .listsanphamhotdeal{
+            display: flex;
+        }
+        .listsanphamhotdeal div{
+            width: 230pt;
+            height: 300pt;
+            margin-right: 10pt;
+            text-align: center;
+            margin: 0 auto;
+            
+        }
+        .listsanphamhotdeal img{
+            width: 230pt;
+            height: 300pt;
+            border-radius: 10pt;
+        }
+        .billboard1{
+            height: 600pt;
+            width: 100%;
+            display: flex;
+        }
+        .box_img1{
+            width: 50%;
+            height: 550pt;
+            position: relative;
+            background-color: rgb(180, 197, 228);
+        }
+        .box_img1 img{
+            height: 500pt;
+            width: auto;
+            position: absolute;
+            top: 0;
+            right: 0;
+            border-left: 5pt solid white;
+            border-bottom: 5pt solid white;
+        }
+        .box_content1{
+            width: 50%;
+            height: 160pt;
+            margin-top: 230pt;
+        }
+        .content1{
+            height: 160pt;
+            width: 360pt;
+            margin: 0 auto;
+        }
+        .content1 h3{
+            font-size: 29pt;
+            padding-bottom: 15pt;
+        }
+        .content1 p{
+            font-size: 12pt;
+            padding-bottom: 20pt;
+        }
+        .content1 button{
+            height: 40pt;
+            width: 160pt;
+            background-color: black;
+        }
+        .content1 a{
+            color: white;
+            font-size: 12pt;
+        }
+        .billboard2{
+            height: 600pt;
+            width: 100%;
+            display: flex;
+            position: relative;
+        }
+        .billboard2 .box_img2{
+            width: 50%;
+            height: 550pt;
+            position: relative;
+            background-color: rgb(180, 197, 228);
+        }
+        .box_img2 img{
+            height: 500pt;
+            width: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-right: 5pt solid white;
+            border-bottom: 5pt solid white;
+        }
+        .box_content2{
+            width: 50%;
+            height: 160pt;
+            margin-top: 230pt;
+        }
+        .content2{
+            height: 160pt;
+            width: 360pt;
+            margin: 0 auto;
+        }
+        .content2 h3{
+            font-size: 29pt;
+            padding-bottom: 15pt;
+        }
+        .content2 p{
+            font-size: 12pt;
+            padding-bottom: 20pt;
+        }
+        .content2 button{
+            height: 40pt;
+            width: 160pt;
+            background-color: black;
+        }
+        .content2 a{
+            color: white;
+            font-size: 12pt;
+        }
+        .bestseller{
+            padding-top: 46pt;
+            height: 770pt;
+            width: 100%;
+        }
+        .container4{
+            height: 770pt;
+            width: 1020pt;
+            margin: 0 auto;
+        }
+        .listsanphambestseller{
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+        .listsanphambestseller div{
+            width: 230pt;
+            height: 300pt;
+            text-align: center;
+            margin: 0 auto;
+            padding-bottom: 36pt;
+            
+        }
+        .listsanphambestseller img{
+            width: 230pt;
+            height: 300pt;
+            border-radius: 10pt;
+        }
+        /* Mobile and Ipad */
+        @media only screen and (max-width: 63.9375) {
+            
+        }
+        /* Iphone 12 pro: width < 740px */
+        @media only screen and (max-width: 740px) {
+            
+        }
+        /* Ipad pro: width >= 780px and width < 1024px */
+        @media only screen and (min-width: 780px) and (max-width: 1024px) {
+            .slide{
+                width: 750pt;
+                margin-left: 1pt;
+            }
+            .chuyen_slide div{
+                width: 250pt; 
+            }
+            .heading{
+                width: 750pt;
+            }
+            .hotdeal{
+                height: 750pt;
+            }
+            .container3{
+                width: 750pt;
+            }
+            .container3{
+                height: 820pt;
+            }
+            .listsanphamhotdeal{
+                flex-wrap: wrap;
+            }
+            .listsanphamhotdeal div{
+                padding-bottom: 29pt;
+            }
+            .container4{
+                width: 750pt;
+            }
+            .billboard1{
+                width: 750pt;
+            }
+            .billboard2{
+                width: 750pt;
+            }
+            .container2{
+                width: 750pt;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="container">
+            <div class="container_box">
+                <img src="img/anh2.jpg" alt="" class="container_box-img">
+                <div class="container_box-info">
+                    <h3>Basic</h3>
+                    <a href="#">View more</a>
+                </div>
+            </div>
+            <div class="container_box">
+                <img src="img/anh1.jpg" alt="" class="container_box-img">
+                <div class="container_box-info">
+                    <h3>Man</h3>
+                    <a href="#">View more</a>
+                </div>
+            </div>
+            <div class="container_box">
+                <img src="img/anh3.jpg" alt="" class="container_box-img">
+                <div class="container_box-info">
+                    <h3>Women</h3>
+                    <a href="#">View more</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section-new-arrivals">
+            <div class="container2">
+                <div class="heading">
+                    <h3>NEW ARRIVALS</h3>
+                </div>
+
+                <div class="slide">
+                    <div class="huongtrai">
+                        <i class="fa fa-mail-reply" style="font-size:36px" onclick="Back();"></i>
+                    </div>
+                    <div class="huongphai">
+                        <i class="fa fa-mail-forward" style="font-size:36px" onclick="Next();"></i>
+                    </div>
+                    <div class="chuyen_slide">
+                        <div class="anh">
+                            <a href="#"><img src="img/adidas_Superstar.jpg" alt=""></a>
+                            <h4><a href="#">Adidas Superstar</a></h4>
+                            <p>$1</p>
+                        </div>
+                        <div class="anh">
+                            <a href="#"><img src="img/Converse_Chuck_Taylor_All_Star.jpg" alt=""></a>
+                            <h4><a href="#">Converse Chuck Taylor All Star</a></h4>
+                            <p>$1</p>
+                        </div>
+                        <div class="anh">
+                            <a href="#"><img src="img/fila_oakmont_tr.jpg" alt=""></a>
+                            <h4><a href="#">Fila Oakmont Tr</a></h4>
+                            <p>$1</p>
+                        </div>
+                        <div class="anh">
+                            <a href="#"><img src="img/Fila_Raid_Low_2000.jpg" alt=""></a>
+                            <h4><a href="#">Fila Raid Low 2000</a></h4>
+                            <p>$1</p>
+                        </div>
+                        <div class="anh">
+                            <a href="#"><img src="img/Fila_Ray_Tracer.jpg" alt=""></a>
+                            <h4><a href="#">Fila Ray Tracer</a></h4>
+                            <p>$1</p>
+                        </div>
+                        <div class="anh">
+                            <a href="#"><img src="img/fila_zagato.jpg" alt=""></a>
+                            <h4><a href="#">Fila Zagato</a></h4>
+                            <p>$1</p>
+                        </div>
+                        <div class="anh">
+                            <a href="#"><img src="img/Adidas_Stan_Smith.jpg" alt=""></a>
+                            <h4><a href="#">Adidas Stan Smith</a></h4>
+                            <p>$1</p>
+                        </div>
+                        <div class="anh">
+                            <a href="#"><img src="img/Nike_Court_Vision.jpg" alt=""></a>
+                            <h4><a href="#">Nike Court Vision</a></h4>
+                            <p>$1</p>
+                        </div>
+                        <div class="anh">
+                            <a href="#"><img src="img/Puma_Mayze_Lth.jpg" alt=""></a>
+                            <h4><a href="#">Puma Mayze Lth</a></h4>
+                            <p>$1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hotdeal">
+            <div class="container3">
+                <div class="heading2">
+                    <h3>HOT DEAL</h3>
+                    <span class="sub_heading">Don't Miss Today's Featured Deals</span>
+                </div>
+                <div class="listsanphamhotdeal">
+                    <div class="anh">
+                        <a href="#"><img src="img/fila_zagato.jpg" alt=""></a>
+                        <h4><a href="#">Fila Zagato</a></h4>
+                        <p>$1</p>
+                    </div>
+                    <div class="anh">
+                        <a href="#"><img src="img/Adidas_Stan_Smith.jpg" alt=""></a>
+                        <h4><a href="#">Adidas Stan Smith</a></h4>
+                        <p>$1</p>
+                    </div>
+                    <div class="anh">
+                        <a href="#"><img src="img/Nike_Court_Vision.jpg" alt=""></a>
+                        <h4><a href="#">Nike Court Vision</a></h4>
+                        <p>$1</p>
+                    </div>
+                    <div class="anh">
+                        <a href="#"><img src="img/Puma_Mayze_Lth.jpg" alt=""></a>
+                        <h4><a href="#">Puma Mayze Lth</a></h4>
+                        <p>$1</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="billboard1">
+            <div class="box_img1">
+                <img src="img/anh4.jpg" alt="">
+            </div>
+            <div class="box_content1">
+                <div class="content1">
+                    <h3>Choose Clothes That Suit Your Body Shape</h3>
+                    <p>Enhance the look of the wearer. All color, textures, designs, fabrics,...</p>
+                    <button><a href="#">SHOP NOW</a></button>
+                </div>
+            </div>
+
+        </div>
+        <div class="billboard2">
+            <div class="box_content2">
+                <div class="content2">
+                    <h3>Choose Clothes That Suit Your Body Shape</h3>
+                    <p>Enhance the look of the wearer. All color, textures, designs, fabrics,...</p>
+                    <button><a href="#">SHOP NOW</a></button>
+                </div>
+            </div>
+            <div class="box_img2">
+                <img src="img/anh5.jpg" alt="">
+            </div>
+        </div>
+        <div class="bestseller">
+            <div class="container4">
+                <div class="heading2">
+                    <h3>BEST SELLER</h3>
+                    <span class="sub_heading">Best Seller Product This Week!</span>
+                </div>
+                <div class="listsanphambestseller">
+                    <div class="anh">
+                        <a href="#"><img src="img/fila_zagato.jpg" alt=""></a>
+                        <h4><a href="#">Fila Zagato</a></h4>
+                        <p>$1</p>
+                    </div>
+                    <div class="anh">
+                        <a href="#"><img src="img/Adidas_Stan_Smith.jpg" alt=""></a>
+                        <h4><a href="#">Adidas Stan Smith</a></h4>
+                        <p>$1</p>
+                    </div>
+                    <div class="anh">
+                        <a href="#"><img src="img/Nike_Court_Vision.jpg" alt=""></a>
+                        <h4><a href="#">Nike Court Vision</a></h4>
+                        <p>$1</p>
+                    </div>
+                    <div class="anh">
+                        <a href="#"><img src="img/Puma_Mayze_Lth.jpg" alt=""></a>
+                        <h4><a href="#">Puma Mayze Lth</a></h4>
+                        <p>$1</p>
+                    </div>
+                    <div class="anh">
+                        <a href="#"><img src="img/fila_zagato.jpg" alt=""></a>
+                        <h4><a href="#">Fila Zagato</a></h4>
+                        <p>$1</p>
+                    </div>
+                    <div class="anh">
+                        <a href="#"><img src="img/Adidas_Stan_Smith.jpg" alt=""></a>
+                        <h4><a href="#">Adidas Stan Smith</a></h4>
+                        <p>$1</p>
+                    </div>
+                    <div class="anh">
+                        <a href="#"><img src="img/Nike_Court_Vision.jpg" alt=""></a>
+                        <h4><a href="#">Nike Court Vision</a></h4>
+                        <p>$1</p>
+                    </div>
+                    <div class="anh">
+                        <a href="#"><img src="img/Puma_Mayze_Lth.jpg" alt=""></a>
+                        <h4><a href="#">Puma Mayze Lth</a></h4>
+                        <p>$1</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+
+
+
+    <Script>
+        var kichThuoc = document.getElementsByClassName("slide")[0].clientWidth;
+        var chuyenSlide = document.getElementsByClassName("chuyen_slide")[0];
+        var Img = chuyenSlide.getElementsByClassName("anh");
+        var maxChuyen = kichThuoc * (Img.length/3);
+        maxChuyen -= kichThuoc;
+        var Chuyen = 0;
+        function Next(){
+            if(Chuyen < maxChuyen){
+                Chuyen = Chuyen + kichThuoc;
+            }
+            else{
+                Chuyen = 0;
+            }
+            chuyenSlide.style.marginLeft = "-" + Chuyen + "px";
+        }
+        function Back(){
+            if(Chuyen == 0){
+                Chuyen = maxChuyen;
+            }
+            else{
+                Chuyen = Chuyen-kichThuoc;
+            }
+            chuyenSlide.style.marginLeft = "-"+ Chuyen + "px";
+        }
+        setInterval(function(){
+            Next();
+        }, 3000);
+    </Script>
+</body>
+</html>
