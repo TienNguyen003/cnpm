@@ -1,0 +1,257 @@
+@media (min-width:1024px) and (max-width:1366px)
+{
+    .pages__menu {
+        display: block;
+    }
+    #pages__header {
+        justify-content: space-between;
+    }
+    .page__logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .pages__menu>i {
+      font-size: 24px;  
+    }
+    .pages__menu-responsive {
+        display: none;
+        z-index: 3;
+        position: absolute;
+        width: 100%;
+        top: 60px;
+        left: 0;
+    }
+    .pages__menu-responsive>li>a {
+        display: block;
+        padding: 15px 30px;
+        background-color: white;
+        color: black;
+        border-bottom: 1px solid gainsboro;
+        font-weight: bold;
+    }
+    .pages__menu-show:hover>.pages__menu-responsive {
+        display: block;
+    }
+    .page__nav {
+        display: none;
+        width: 1000px;
+        max-width: 1000px;
+        justify-content: center;
+        align-items: center;
+    }
+    .pages__box-slider-item-responsive {
+        top: 10%;
+    }
+
+}
+
+@media (min-width:768px) and  (max-width:1023px)
+{
+    .pages__menu {
+        display: block;
+    }
+    #pages__header {
+        justify-content: space-between;
+    }
+    .page__logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .pages__menu>i {
+      font-size: 24px;  
+    }
+    .pages__menu-responsive {
+        display: none;
+        z-index: 3;
+        position: absolute;
+        width: 100%;
+        top: 60px;
+        left: 0;
+    }
+    .pages__menu-responsive>li>a {
+        display: block;
+        padding: 15px 30px;
+        background-color: white;
+        color: black;
+        border-bottom: 1px solid gainsboro;
+        font-weight: bold;
+    }
+    .pages__menu-show:hover>.pages__menu-responsive {
+        display: block;
+    }
+    .page__nav {
+        display: none;
+        width: 1000px;
+        max-width: 1000px;
+        justify-content: center;
+        align-items: center;
+    }
+    .pages__box-list-item-res-ipad {
+        justify-content: space-between;
+    }
+    .pages__box-list-item-res-ipad>.pages__box-list-item-info {
+        width: 50%;
+    }
+    .pages__box-list-item-res-ipad>.pages__box-list-item-image {
+        width: 50%;
+    }
+    .pages__box-slider-item-responsive {
+        top: 0;
+    }
+    .pages__box-slider-icon-res-ipad i {
+        font-size: 40px;
+    }
+    .pages__box-bran-item:last-child {
+        display: none;
+    }
+    .pages__box-our-item {
+        width: 100%;
+        margin-top: 30px;
+        padding: 0px 100px;
+    }
+    .pages__box-insta-item:nth-child(n+4) {
+        display: none;
+    }
+    .pages__footer-list-item-contact {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .pages__footer-list-item-contact-desc {
+        width: 30%;
+    }
+    .pages__footer-list-item {
+        width: calc(100%/3);
+    }
+}
+@media (min-width:360px) and (max-width: 767px)
+{   
+    .page__logo-iphoneX {
+        left: 80% !important;
+    }
+    .page__nav {
+        display: none;
+    }
+    .page__logo>img {
+        width: 100px;
+    }
+    .pages__menu {
+        display: block;
+    }
+    #pages__header {
+        justify-content: start;
+    }
+    .pages__silider-title {
+        font-size: 40px !important;
+    }
+    .pages__box-list-item-image {
+        position: absolute;
+    }
+    .page__logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .pages__menu>i {
+      font-size: 24px;  
+    }
+    .pages__menu-responsive {
+        display: none;
+        z-index: 3;
+        position: absolute;
+        width: 100%;
+        top: 60px;
+        left: 0;
+    }
+    .pages__menu-responsive>li>a {
+        display: block;
+        padding: 15px 30px;
+        background-color: white;
+        color: black;
+        border-bottom: 1px solid gainsboro;
+        font-weight: bold;
+    }
+    .pages__menu-show:hover>.pages__menu-responsive {
+        display: block;
+    }
+    .page__nav {
+        display: none;
+        width: 1000px;
+        max-width: 1000px;
+        justify-content: center;
+        align-items: center;
+    }
+    .pages__box-list-item-res-ipad {
+        justify-content: space-between;
+    }
+    .pages__box-list-item-info {
+        margin-top: 350px;
+        width: 100%;
+    }
+    .pages__box-list-item-image {
+        width: 100%;
+    }
+    .pages__box-slider-list {
+        height: 500px;
+    }
+    .pages__box-slider-item:nth-child(n+2) {
+        display: none;
+    }
+    .pages__box-slider-item-responsive {
+        top: 0;
+    }
+    .pages__box-slider-icon-res-ipad i {
+        font-size: 40px;
+    }
+    .pages__box-slider>img {
+        height: 500px;
+    }
+    .pages__box-our-item {
+        position: relative;
+        width: 100%;
+        margin-top: 30px;
+        padding: 0px 100px;
+    }
+    .pages__box-our-item-submit {
+        top: 90px;
+        left: 110px;
+        position: absolute;
+    }
+    .pages__box-our-item-icon {
+        position: absolute;
+        top: 0;
+    }
+    .pages__box-insta-item:nth-child(n+4) {
+        display: none;
+    }
+    .pages__footer-list-item-contact {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .pages__box-our-item-info {
+        margin-top: 130px;
+        padding-right: 0;
+    }
+    .pages__box-slider-item{
+        width: 100%;
+    }
+    .pages__box-bran-item {
+        width: 100%;
+    }
+    .pages__box-bran-item:nth-child(n+2) {
+        display: none;
+    }
+    .pages__footer-list-item-contact-desc {
+        width: 30%;
+    }
+    .pages__footer-list-item {
+        width: calc(100%/3);
+    }
+}   
