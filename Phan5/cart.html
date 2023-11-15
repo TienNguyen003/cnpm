@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="">
+    <script src="https://kit.fontawesome.com/9140a7c26d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-items">
+        <div class="container-item">
+            <a href="#" class="item-h">Home</a>
+            <i class="fa-solid fa-angle-right item-i"></i>
+            <b class="item-txt">Your Shopping Cart</b>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="container-head">
+            <input type="checkbox" name="checkAll" id="" class="ctn-input">
+            <div class="ctn-product">Product</div>
+            <div class="ctn-price">Price</div>
+            <div class="ctn-quantity">Quantity</div>
+            <div class="ctn-total">Total</div>
+            <div class="ctn-operate">Operate</div>
+        </div>
+
+        <!-- product -->
+
+
+        <div class="container-body">
+            <div class="container-body_res">
+                <div class="ctn-body-resp">
+                    <input type="checkbox" name="" id="" class="ctn-input ctn_rest-ip">
+                    <span class="ctn-product-resp">Name product</span>
+                 </div>
+                <div class="ctn-product">
+                    <img src="https://vn-test-11.slatic.net/p/f2b998739d8d1ad5ef2fabbcc7f393f9.jpg" alt="" class="ctn-product-img">
+                    <div class="ctn-product-title">Giày này nhìn cũng được Giày này nhìn cũng được Giày này nhìn cũng được Giày này nhìn cũng được Giày này nhìn cũng đượcGiày này nhìn cũng được Giày này nhìn cũng được Giày này nhìn cũng được Giày này nhìn cũng được</div>
+                </div>
+            </div>
+            <div class="ctn-pro_enter"></div>
+            <div class="ctn-price"><span class="display-info">Price:</span> 999$</div>
+
+            <div class="ctn-quantity">
+                <div class="quantity-container">
+                    <span class="display-info1">Quantity:</span>
+                    <div class="quantity-control control-right" onclick="decreaseQuantity()"><p>-</p></div>
+                    <input type="text" class="quantity-input" id="quantity" value="1" readonly>
+                    <div class="quantity-control" onclick="increaseQuantity()"><p>+</p></div>
+                </div>
+            </div> 
+
+            <div class="ctn-total"><span class="display-info">Total:&nbsp</span>999$</div>
+
+            <div class="ctn-operate">
+                <input type="submit" value="Xóa" class="ctn-operate-delete">
+            </div>
+
+        </div>
+
+        <!-- product -->
+
+    </div>
+
+    <!--payment -->
+    <div class="container-footer">
+        <div class="ctn-voucher">
+            <div class="ctn-voucher-l">
+            </div>
+            <div class="ctn-voucher-r">
+                <a href="#" class="ctn-voucher-shop">Shope Voucher</a>
+                <a href="#" class="ctn-voucher-id">Chọn hoặc nhập mã</a>
+            </div>
+        </div>
+
+        <div class="ctn-payment">
+            <div class="ctn-payment-txt">Tổng thanh toán (<b>0</b> sản phẩm): <span class="txt-money"> <b>0$</b></span></div><br>
+            <input type="submit" value="Thanh Toán" class="ctn-payment-order">
+        </div>
+    </div>
+    <!--payment -->
+</body>
+
+<script>
+    // JavaScript để điều chỉnh giá trị quantity
+    function increaseQuantity() {
+        var quantityInput = document.getElementById('quantity');
+        var currentValue = parseInt(quantityInput.value, 10);
+        quantityInput.value = currentValue + 1;
+    }
+
+    function decreaseQuantity() {
+        var quantityInput = document.getElementById('quantity');
+        var currentValue = parseInt(quantityInput.value, 10);
+        if (currentValue > 1) {
+            quantityInput.value = currentValue - 1;
+        }
+    }
+</script>
+
+</html>

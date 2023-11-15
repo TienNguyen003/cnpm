@@ -1,0 +1,201 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: #d0d0ce;
+}
+
+.container {
+    max-width: 1110px;
+    display: flex;
+    width: 100%;
+    margin: 80px auto;
+}
+
+.container-image {
+    width: 42%;
+
+}
+
+.ctn-image {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 100%;
+    height: 570px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.ctn-right {
+    width: 58%;
+    background: #ffffff;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.ctn-right-hed {
+    margin: 95px 0 10px 65px;
+}
+
+.ctn-input-txt {
+    margin: 20px 0 0 65px;
+    padding: 0 20px;
+    width: 50%;
+    height: 44px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+
+}
+
+
+.ctn-input-lg {
+    margin: 20px 0 0 65px;
+    width: 56.5%;
+    height: 44px;
+    background: black;
+    color: white;
+}
+
+.ctn-input-cb {
+    margin: 15px 0 0 65px;
+}
+
+.ctn-input-forgot {
+    display: block;
+    margin: 0px 0 0 65px;
+
+}
+
+.ctn-input-rgs {
+    margin: 10px 0 0 65px;
+}
+
+.btn-or {
+    display: flex;
+    margin-top: -8px;
+}
+
+.btn-or-1 {
+    margin: 8px 0 0 65px;
+    height: 0.5px;
+    width: 24.5%;
+    background: #ccc;
+}
+
+.btn-or-2 {
+    margin: 8px 0 0 10px;
+    height: 0.5px;
+    width: 24.5%;
+    background: #ccc;
+}
+
+.btn-fb {
+    margin: 8px 0 0 65px;
+    width: 25%;
+    height: 35px;
+}
+
+.btn-gg {
+    margin: 8px 0 0 40px;
+    width: 25%;
+    height: 35px;
+}
+
+@media only screen and (max-width: 46.1875em) {
+    .ctn-image {
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        width: 100%;
+        height: 570px;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+
+    .ctn-right {
+        width: 58%;
+        background: #ffffff;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .ctn-right-hed {
+        margin: 75px 0 0px 30px;
+    }
+
+    .ctn-input-txt {
+        margin: 20px 0 0 30px;
+        padding: 0 15px;
+        width: 55%;
+        height: 44px;
+        border: 1px solid #ccc;
+        border-radius: 0px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        outline: navajowhite;
+    }
+
+    .ctn-input-lg {
+        margin: 20px 0 0 30px;
+        width: 69%;
+        height: 40px;
+        border: none;
+        color: white;
+        background: black;
+    }
+
+    .ctn-input-cb {
+        margin: 15px 0 0 30px;
+    }
+    
+    .ctn-input-forgot {
+        display: block;
+        margin: 0px 0 0 30px;
+    
+    }
+    
+    .ctn-input-rgs {
+        margin: 10px 0 0 30px;
+    }
+    
+    .btn-or {
+        display: flex;
+        margin-top: -8px;
+    }
+    
+    .btn-or-1 {
+        margin: 8px 0 0 30px;
+        height: 0.5px;
+        width: 24.5%;
+        background: #ccc;
+    }
+    
+    .btn-or-2 {
+        margin: 8px 0 0 10px;
+        height: 0.5px;
+        width: 24.5%;
+        background: #ccc;
+    }
+    
+    .btn-fb {
+        margin: 8px 0 0 30px;
+        width: 31%;
+        height: 35px;
+    }
+    
+    .btn-gg {
+        margin: 8px 0 0 10px;
+        width: 31%;
+        height: 35px;
+    }
+
+    .ctn-input-rps {
+        margin: 10px 0 0 30px;
+    }
+}
+
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    
+}
