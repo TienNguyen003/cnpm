@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrap {
+
+}
+
+.containers {
+    display: flex;
+    text-align: center;
+    height: 100%;
+}
+
+.container_box {
+    position: relative;
+    margin: 0 0 0 30px;
+    height: 100%;
+}
+
+.container_box-img {
+    width: 466px;
+    height: 637px;
+    object-fit: cover;
+    /* display: block; */
+}
+
+.containers a {
+    color: black;
+    display: inline-block;
+    font-size: 15px;
+    background-color: beige;
+    border: none;
+    padding: 13px 28px;
+    
+}
+
+.containers h3 {
+    margin-top: 60px;
+    padding-bottom: 15px;
+    font-size: 56pt;
+    color: white;
+}
+
+
+.container_box-info {
+   position: absolute;
+   top: 175px;
+   left: 138px;
+
+}
+
+.section-new-arrivals {
+    /* margin-top: ; */
+    background-color: #fafafa;
+    height: 560pt;
+    width: 100%;
+}
+
+.container2 {
+    height: 500pt;
+    width: 1020pt;
+    margin: 0 auto;
+    padding-top: 36pt;
+    padding-bottom: 10pt;
+}
+
+.heading {
+    text-align: center;
+}
+
+.heading h3 {
+    border-bottom: 2pt solid rgb(235, 116, 42);
+    width: 160pt;
+    margin: 0 auto;
+    font-size: 16pt;
+}
+
+.slide {
+    width: 900pt;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.chuyen_slide {
+    display: flex;
+    transition: all 0.5s;
+}
+
+.chuyen_slide img {
+    height: 400pt;
+    width: 300pt;
+    float: left;
+}
+
+.chuyen_slide div {
+    width: 300pt;
+}
+
+.chuyen_slide p {
+    color: rgb(250, 129, 29);
+    font-size: 16pt;
+}
+
+.chuyen_slide h4 {
+    color: rgb(250, 129, 29);
+    font-size: 16pt;
+}
+
+.slide .huongtrai {
+    width: 50pt;
+    top: 50%;
+    left: 1pt;
+}
+
+.slide .huongphai {
+    width: 50pt;
+    top: 50%;
+    right: 1pt;
+}
+
+.huongtrai,
+.huongphai {
+    display: none;
+}
+
+.slide:hover .huongphai {
+    display: block;
+}
+
+.slide:hover .huongtrai {
+    display: block;
+}
+
+.hotdeal {
+    padding-top: 43pt;
+    width: 100%;
+}
+
+.container3 {
+    width: 1020pt;
+    margin: 0 auto;
+}
+
+.heading2 {
+    text-align: center;
+}
+
+.heading2 h3 {
+    border-bottom: 2pt solid rgb(235, 116, 42);
+    width: 160pt;
+    font-size: 16pt;
+    margin: 0 auto;
+    margin-bottom: 12pt;
+}
+
+.listsanphamhotdeal {
+    display: flex;
+}
+
+.listsanphamhotdeal div {
+    width: 230pt;
+    height: 300pt;
+    margin-right: 10pt;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+.listsanphamhotdeal img {
+    width: 230pt;
+    height: 300pt;
+    border-radius: 10pt;
+}
+
+.ctn_board{
+    margin-top: 190px;
+}
+
+.billboard1 {
+    height: 600pt;
+    width: 100%;
+    display: flex;
+}
+
+.box_img1 {
+    width: 50%;
+    height: 615px;
+    position: relative;
+    background-color: #eef5fa;
+}
+
+.box_img1 img {
+    height: 700px;
+    width: 690px;
+    object-fit: cover;
+    border-left: 5pt solid white;
+    border-bottom: 5pt solid white;
+    position: absolute;
+    top: -130px;
+    left: 70px;
+}
+
+.box_content1 {
+    width: 50%;
+    height: 160pt;
+    margin-top: 100px;
+}
+
+.content1 {
+    height: 160pt;
+    width: 360pt;
+    margin: 0 auto;
+}
+
+.content1 h3 {
+    font-size: 29pt;
+    padding-bottom: 15pt;
+}
+
+.content1 p {
+    font-size: 12pt;
+    padding-bottom: 20pt;
+}
+
+.content1 button {
+    height: 50px;
+    width: 180px;
+    border: none;
+    background-color: black;
+}
+
+.content1 a {
+    color: white;
+    font-size: 12pt;
+}
+
+.billboard2 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.billboard2 .box_img2 {
+    width: 50%;
+    height: 615px;
+    position: relative;
+    background-color: #eef5fa;
+}
+
+.box_img2 img {
+    height: 700px;
+    width: 690px;
+    object-fit: cover;
+    position: absolute;
+    top: -185px;
+    left: 70px;
+    border-right: 5pt solid white;
+    border-bottom: 5pt solid white;
+}
+
+.box_content2 {
+    width: 50%;
+    height: 160pt;
+    margin-top: 100px;
+}
+
+.content2 {
+    height: 160pt;
+    width: 360pt;
+    margin: 0 auto;
+}
+
+.content2 h3 {
+    font-size: 29pt;
+    padding-bottom: 15pt;
+}
+
+.content2 p {
+    font-size: 12pt;
+    padding-bottom: 20pt;
+}
+
+.content2 button {
+    height: 50px;
+    width: 180px;
+    border: none;
+    background-color: black;
+}
+
+.content2 a {
+    color: white;
+    font-size: 12pt;
+}
+
+.bestseller {
+    padding-top: 46pt;
+    height: 100%;
+    width: 100%;
+}
+
+.container4 {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.listsanphambestseller {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.listsanphambestseller div {
+    width: 230pt;
+    height: 300pt;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 36pt;
+
+}
+
+.listsanphambestseller img {
+    width: 230pt;
+    height: 300pt;
+    border-radius: 10pt;
+}
+
+/* Mobile and Ipad */
+@media only screen and (max-width: 63.9375) {}
+
+/* Iphone 12 pro: width < 740px */
+@media only screen and (max-width: 740px) {}
+
+/* Ipad pro: width >= 780px and width < 1024px */
+@media only screen and (min-width: 780px) and (max-width: 1024px) {
+    .slide {
+        width: 750pt;
+        margin-left: 1pt;
+    }
+
+    .chuyen_slide div {
+        width: 250pt;
+    }
+
+    .heading {
+        width: 750pt;
+    }
+
+    .hotdeal {
+        height: 750pt;
+    }
+
+    .container3 {
+        width: 750pt;
+    }
+
+    .container3 {
+        height: 820pt;
+    }
+
+    .listsanphamhotdeal {
+        flex-wrap: wrap;
+    }
+
+    .listsanphamhotdeal div {
+        padding-bottom: 29pt;
+    }
+
+    .container4 {
+        width: 750pt;
+    }
+
+   
+
+    .billboard1 {
+        width: 750pt;
+    }
+
+    .billboard2 {
+        width: 750pt;
+    }
+
+    .container2 {
+        width: 750pt;
+    }
+}
